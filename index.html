@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Tech Toy — Transformando tecnologia descartada em novas possibilidades</title>
+  <meta name="description" content="A Nova Tech Toy ressignifica resíduos eletrônicos, transformando-os em experiências sustentáveis, tecnológicas e inclusivas que conectam aprendizado, criatividade e o brincar universal.">
+  <meta name="theme-color" content="#102A3C">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nova Tech Toy — Transformando tecnologia descartada em novas possibilidades">
+  <meta property="og:description" content="Tecnologia, sustentabilidade e inclusão em uma só iniciativa: conheça a Nova Tech Toy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/imagens/nova-tech-toy-selo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Nova Tech Toy — página inicial">
+        <img src="assets/logo.png" alt="" class="logo-icon" width="52" height="38">
+        <span class="logo-text">NOVA TECH<em>TOY</em></span>
+      </a>
+
+      <div class="nav-wrap" id="navWrap">
+        <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+          <ul>
+            <li><a href="#inicio" class="nav-link">Início</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#missao" class="nav-link">Missão</a></li>
+            <li><a href="#visao" class="nav-link">Visão</a></li>
+            <li><a href="#valores" class="nav-link">Valores</a></li>
+            <li><a href="#impacto" class="nav-link">Impacto</a></li>
+          </ul>
+        </nav>
+        <a href="#sobre" class="btn btn-primary header-cta">Conheça a Nova Tech Toy</a>
+      </div>
+
+      <button type="button" class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navWrap">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Economia circular &amp; tecnologia</p>
+          <h1 class="hero-title">Transformando tecnologia descartada em <em>novas possibilidades</em>.</h1>
+          <p class="hero-text">A Nova Tech Toy transforma resíduos eletrônicos em experiências que conectam tecnologia, sustentabilidade, aprendizado e inclusão.</p>
+          <div class="hero-actions">
+            <a href="#sobre" class="btn btn-primary" data-scroll>Conheça nossa proposta</a>
+            <a href="#impacto" class="btn btn-outline" data-scroll>Descubra nosso impacto</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <svg class="hero-art" viewBox="0 0 600 600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="90" y="70" width="420" height="420" rx="48" class="art-panel art-panel--blue" transform="rotate(-8 300 300)"></rect>
+            <rect x="110" y="110" width="380" height="380" rx="40" class="art-panel art-panel--green" transform="rotate(4 300 300)"></rect>
+
+            <g class="art-orbit">
+              <circle cx="300" cy="300" r="235" class="art-orbit-ring"></circle>
+              <circle cx="300" cy="65" r="7" class="art-node art-node--accent"></circle>
+              <circle cx="300" cy="535" r="5" class="art-node art-node--primary"></circle>
+            </g>
+
+            <g class="art-traces">
+              <path d="M 30 210 H 125 V 140 H 195" class="trace trace--blue"></path>
+              <circle cx="125" cy="210" r="5" class="node node--blue"></circle>
+              <circle cx="195" cy="140" r="5" class="node node--blue"></circle>
+              <circle cx="30" cy="210" r="4" class="node node--blue"></circle>
+
+              <path d="M 572 388 H 478 V 462 H 405" class="trace trace--green"></path>
+              <circle cx="478" cy="388" r="5" class="node node--green"></circle>
+              <circle cx="405" cy="462" r="5" class="node node--green"></circle>
+              <circle cx="572" cy="388" r="4" class="node node--green"></circle>
+
+              <path d="M 55 430 H 130 V 490" class="trace trace--accent"></path>
+              <circle cx="130" cy="430" r="4" class="node node--accent"></circle>
+            </g>
+
+            <g class="art-float art-float--slow">
+              <rect x="446" y="86" width="66" height="66" rx="16" class="shape shape--hex" transform="rotate(15 479 119)"></rect>
+            </g>
+
+            <g class="art-float art-float--med">
+              <rect x="66" y="438" width="58" height="58" rx="14" class="shape shape--chip"></rect>
+              <line x1="66" y1="452" x2="46" y2="452" class="pin"></line>
+              <line x1="66" y1="467" x2="46" y2="467" class="pin"></line>
+              <line x1="124" y1="452" x2="144" y2="452" class="pin"></line>
+              <line x1="124" y1="467" x2="144" y2="467" class="pin"></line>
+            </g>
+
+            <path d="M 486 460 C 524 424 524 368 486 340 C 522 378 522 434 486 460 Z" class="leaf"></path>
+          </svg>
+          <img src="assets/imagens/nova-tech-toy-selo.png" alt="Selo da Nova Tech Toy: robô mascote ao centro de um ciclo de setas azul, verde e dourada, representando o processo de economia circular" class="hero-badge" width="467" height="480">
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-cue" data-scroll aria-label="Rolar até a próxima seção">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ==================== SOBRE ==================== -->
+    <section class="about" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container about-inner">
+        <div class="about-text reveal">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Sobre a Nova Tech Toy</p>
+          <h2 id="sobre-titulo">Tecnologia pode ter uma <em>segunda vida</em>.</h2>
+          <p>Aquilo que já foi considerado descarte pode se transformar em uma nova possibilidade. A Nova Tech Toy nasce da ideia de ressignificar resíduos eletrônicos e transformá-los em experiências que estimulam o aprendizado, a criatividade, a interação e a inclusão.</p>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="flow" role="list" aria-label="Fluxo de transformação: resíduo, tecnologia, criação e experiência">
+            <div class="flow-step" role="listitem">
+              <span class="flow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="4" width="14" height="16" rx="2"></rect><path d="M9 8h6M9 12h6M9 16h3"></path><path d="M3 2l18 20" stroke-width="1.4"></path></svg>
+              </span>
+              <span class="flow-label">Resíduo</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true"></span>
+            <div class="flow-step" role="listitem">
+              <span class="flow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="6" width="12" height="12" rx="2"></rect><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"></path></svg>
+              </span>
+              <span class="flow-label">Tecnologia</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true"></span>
+            <div class="flow-step" role="listitem">
+              <span class="flow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.5 2.5l-9 9 3 3 9-9-3-3z"></path><path d="M8.5 8.5L4 13l1.5 5.5L11 17l-2.5-4.5"></path><path d="M4 20l2-2"></path></svg>
+              </span>
+              <span class="flow-label">Criação</span>
+            </div>
+            <span class="flow-arrow" aria-hidden="true"></span>
+            <div class="flow-step" role="listitem">
+              <span class="flow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 13.5c1 1.3 2 1.3 3.5 1.3s2.5 0 3.5-1.3"></path><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"></circle><circle cx="15" cy="10" r="1" fill="currentColor" stroke="none"></circle></svg>
+              </span>
+              <span class="flow-label">Experiência</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROPÓSITO ==================== -->
+    <section class="purpose" id="proposito" aria-labelledby="proposito-titulo">
+      <div class="purpose-bg" aria-hidden="true"></div>
+      <div class="container purpose-inner reveal">
+        <p class="eyebrow eyebrow--onlight"><span class="eyebrow-dot" aria-hidden="true"></span>Nosso propósito</p>
+        <h2 id="proposito-titulo">Mais do que reutilizar. <em>Ressignificar.</em></h2>
+        <p>Nosso propósito é transformar resíduos eletrônicos em ferramentas de inclusão, aprendizado e diversão, criando brinquedos sustentáveis e sensoriais que conectam diferentes formas de brincar através de experiências universais.</p>
+      </div>
+    </section>
+
+    <!-- ==================== MISSÃO ==================== -->
+    <section class="mission" id="missao" aria-labelledby="missao-titulo">
+      <div class="container mission-inner reveal">
+        <svg class="mission-art" viewBox="0 0 400 400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="200" cy="200" r="180" class="m-ring"></circle>
+          <circle cx="200" cy="200" r="130" class="m-ring m-ring--dash"></circle>
+          <path d="M 200 20 V 70 M 200 330 V 380 M 20 200 H 70 M 330 200 H 380" class="m-cross"></path>
+          <circle cx="200" cy="20" r="5" class="m-dot"></circle>
+          <circle cx="200" cy="380" r="5" class="m-dot"></circle>
+          <circle cx="20" cy="200" r="5" class="m-dot"></circle>
+          <circle cx="380" cy="200" r="5" class="m-dot"></circle>
+        </svg>
+        <span class="tag">Propósito</span>
+        <h2 id="missao-titulo">Missão</h2>
+        <p>Transformar resíduos eletrônicos em ferramentas de inclusão, aprendizado e diversão, criando brinquedos sustentáveis e sensoriais que conectam todas as crianças — neurotípicas e neurodivergentes — através do brincar universal.</p>
+      </div>
+    </section>
+
+    <!-- ==================== VISÃO ==================== -->
+    <section class="vision" id="visao" aria-labelledby="visao-titulo">
+      <div class="container vision-inner">
+        <div class="vision-text reveal">
+          <span class="tag tag--outline">Futuro</span>
+          <h2 id="visao-titulo">Visão</h2>
+          <p>Ser a marca referência em brinquedos inclusivos e economia circular na América Latina, demonstrando que a tecnologia descartada pode se transformar em um futuro mais acolhedor, consciente e acessível para a infância.</p>
+        </div>
+
+        <div class="vision-flow reveal" role="list" aria-label="Hoje, transformação e amanhã">
+          <div class="vision-node" role="listitem">
+            <span class="vision-dot"></span>
+            <span class="vision-label">Hoje</span>
+          </div>
+          <span class="vision-line" aria-hidden="true"></span>
+          <div class="vision-node vision-node--mid" role="listitem">
+            <span class="vision-dot"></span>
+            <span class="vision-label">Transformação</span>
+          </div>
+          <span class="vision-line" aria-hidden="true"></span>
+          <div class="vision-node vision-node--end" role="listitem">
+            <span class="vision-dot"></span>
+            <span class="vision-label">Amanhã</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VALORES ==================== -->
+    <section class="values" id="valores" aria-labelledby="valores-titulo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Nossos valores</p>
+          <h2 id="valores-titulo">O que orienta cada decisão.</h2>
+        </div>
+
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="12" r="6"></circle><circle cx="15" cy="12" r="6"></circle></svg>
+            </span>
+            <h3>Inclusão pelo Brincar</h3>
+            <p>Projetar brinquedos sob a ótica do Design Universal, garantindo que crianças autistas e neurotípicas compartilhem a mesma experiência com igualdade.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c4 2 7 5 7 10a7 7 0 0 1-14 0c0-5 3-8 7-10z"></path><path d="M12 9v8"></path></svg>
+            </span>
+            <h3>Sustentabilidade</h3>
+            <p>Repensar o destino dos resíduos eletrônicos e transformar descarte em oportunidade.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="10" r="6"></circle><path d="M9.5 21h5M10 16.5v3.5M14 16.5v3.5M12 4V2"></path></svg>
+            </span>
+            <h3>Inovação</h3>
+            <p>Explorar novas possibilidades através da tecnologia, criatividade e design.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5c2-1 5-1 7 0v14c-2-1-5-1-7 0V5z"></path><path d="M20 5c-2-1-5-1-7 0v14c2-1 5-1 7 0V5z"></path></svg>
+            </span>
+            <h3>Aprendizado</h3>
+            <p>Transformar experiências de brincar em oportunidades de descoberta.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="2.4"></circle><path d="M5 12c1.8-3 4-4.5 7-4.5S17.2 9 19 12c-1.8 3-4 4.5-7 4.5S6.8 15 5 12z"></path></svg>
+            </span>
+            <h3>Acessibilidade</h3>
+            <p>Criar experiências que considerem diferentes formas de interação e percepção.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COMO FUNCIONA ==================== -->
+    <section class="process" id="como-funciona" aria-labelledby="processo-titulo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Como funciona</p>
+          <h2 id="processo-titulo">Do descarte à descoberta.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-step reveal">
+            <span class="timeline-number">01</span>
+            <span class="timeline-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8h16l-1.5 11a2 2 0 0 1-2 1.8H7.5a2 2 0 0 1-2-1.8L4 8z"></path><path d="M2 8h20M9 8V6a3 3 0 0 1 6 0v2"></path></svg>
+            </span>
+            <div class="timeline-content">
+              <h3>Coleta</h3>
+              <p>Materiais eletrônicos recebem uma nova oportunidade.</p>
+            </div>
+          </li>
+          <li class="timeline-step reveal">
+            <span class="timeline-number">02</span>
+            <span class="timeline-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16l-3 6 3 6H4l3-6-3-6z"></path></svg>
+            </span>
+            <div class="timeline-content">
+              <h3>Seleção</h3>
+              <p>Componentes são analisados e separados.</p>
+            </div>
+          </li>
+          <li class="timeline-step reveal">
+            <span class="timeline-number">03</span>
+            <span class="timeline-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 11A8 8 0 0 0 6.3 6.3L4 8.6"></path><path d="M4 4v4.6h4.6"></path><path d="M4 13a8 8 0 0 0 13.7 4.7L20 15.4"></path><path d="M20 20v-4.6h-4.6"></path></svg>
+            </span>
+            <div class="timeline-content">
+              <h3>Transformação</h3>
+              <p>Tecnologia e criatividade dão um novo significado aos materiais.</p>
+            </div>
+          </li>
+          <li class="timeline-step reveal">
+            <span class="timeline-number">04</span>
+            <span class="timeline-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.2 5.6L20 10l-4.6 3.6L16.8 20 12 16.6 7.2 20l1.4-6.4L4 10l5.8-1.4L12 3z"></path></svg>
+            </span>
+            <div class="timeline-content">
+              <h3>Experiência</h3>
+              <p>O resultado se transforma em uma experiência pensada para estimular descoberta, interação e aprendizado.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== IMPACTO ==================== -->
+    <section class="impact" id="impacto" aria-labelledby="impacto-titulo">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Impacto</p>
+          <h2 id="impacto-titulo">Transformação que pode ser medida.</h2>
+        </div>
+
+        <dl class="impact-grid">
+          <div class="impact-stat reveal">
+            <dt class="impact-label">Componentes reaproveitados</dt>
+            <dd class="impact-value" data-target="1280" data-suffix="+">0</dd>
+          </div>
+          <div class="impact-stat reveal">
+            <dt class="impact-label">Experiências desenvolvidas</dt>
+            <dd class="impact-value" data-target="340" data-suffix="">0</dd>
+          </div>
+          <div class="impact-stat reveal">
+            <dt class="impact-label">Crianças alcançadas</dt>
+            <dd class="impact-value" data-target="860" data-suffix="+">0</dd>
+          </div>
+          <div class="impact-stat reveal">
+            <dt class="impact-label">De resíduos ressignificados</dt>
+            <dd class="impact-value" data-target="540" data-suffix=" kg">0</dd>
+          </div>
+        </dl>
+        <p class="impact-note">* Números ilustrativos, atualizados conforme o avanço da iniciativa.</p>
+      </div>
+    </section>
+
+    <!-- ==================== FUTURO ==================== -->
+    <section class="future" id="futuro" aria-labelledby="futuro-titulo">
+      <div class="future-bg" aria-hidden="true"></div>
+      <div class="container future-inner reveal">
+        <h2 id="futuro-titulo">O futuro não precisa ser descartado.</h2>
+        <p>Quando tecnologia, criatividade e propósito se encontram, aquilo que parecia ter chegado ao fim pode se tornar o começo de algo novo.</p>
+
+        <div class="concept-web" role="list" aria-label="Tecnologia, sustentabilidade, inclusão e futuro conectados">
+          <span class="concept-node" role="listitem">Tecnologia</span>
+          <span class="concept-node" role="listitem">Sustentabilidade</span>
+          <span class="concept-node" role="listitem">Inclusão</span>
+          <span class="concept-node concept-node--accent" role="listitem">Futuro</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="cta-final" aria-labelledby="cta-titulo">
+      <div class="container cta-final-inner reveal">
+        <h2 id="cta-titulo">Vamos transformar possibilidades em experiências.</h2>
+        <p>Conheça a Nova Tech Toy e acompanhe como tecnologia e sustentabilidade podem construir novas formas de aprender, brincar e transformar.</p>
+        <a href="#sobre" class="btn btn-dark" data-scroll>Conheça nossa história</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo logo--footer" aria-label="Nova Tech Toy — página inicial">
+          <img src="assets/logo.png" alt="" class="logo-icon" width="52" height="38">
+          <span class="logo-text">NOVA TECH<em>TOY</em></span>
+        </a>
+        <p class="footer-tagline">Transformando tecnologia descartada em novas possibilidades.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Links institucionais">
+        <span class="footer-heading">Navegação</span>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#missao">Missão</a></li>
+          <li><a href="#visao">Visão</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#impacto">Impacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <span class="footer-heading">Contato</span>
+        <ul>
+          <li>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"></circle></svg>
+              <span>@novatechtoy</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contato@novatechtoy.com.br">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+              <span>contato@novatechtoy.com.br</span>
+            </a>
+          </li>
+        </ul>
+        <p class="footer-institutional">Iniciativa dedicada à economia circular, tecnologia e inclusão na infância.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year">2026</span> Nova Tech Toy. Todos os direitos reservados.</p>
+        <p>Projeto institucional desenvolvido com fins educacionais.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
